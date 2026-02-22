@@ -28,7 +28,6 @@ pip install alpaca-py pandas numpy python-dotenv
 ### 3. Configure API keys
 Create a `.env` file:
 ```env
-ALPACA_ENDPOINT_URL = "endpoint_url_here"
 ALPACA_API_KEY = "your_key_here"
 ALPACA_SECRET_KEY = "your_secret_here"
 ```
