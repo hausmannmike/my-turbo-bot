@@ -9,23 +9,19 @@ load_dotenv()
 
 
 # function that, given: a ticker, start date and end date, fetches its daily close prices in that time interval.
-def get_daily_close_prices(ticker, start_date, end_date):
+def get_daily_close_prices(tickers, start_date, end_date):
     api_key = os.getenv("ALPACA_API_KEY")
     secret_key = os.getenv("ALPACA_SECRET_KEY")
 
     client = StockHistoricalDataClient(api_key, secret_key)
         
     request = StockBarsRequest(
-        symbol_or_symbols=[ticker], 
+        symbol_or_symbols=tickers, 
         start=start_date,
         end=end_date,
         timeframe=TimeFrame.Day    
     )
 
     bars = client.get_stock_bars(request)
-    closes = bars.df["close"]
-    closes = closes.droplevel("symbol")
-    return closes.head()
-
-
-
+    close_df = bars.df["close"].unstack(level="symbol")
+    return close_df
