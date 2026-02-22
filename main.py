@@ -24,3 +24,13 @@ print(returns)
 print()
 print("Correltion Matrix:")
 print(corr)
+
+# 1. Turn correlation matrix into list of pairs
+# 2. Remove diagonal elements
+# 3. Remove duplicate symmetric pairs.
+corr_unstacked = corr.unstack() #1
+corr_unstacked = corr_unstacked[corr_unstacked.index.get_level_values(0) != corr_unstacked.index.get_level_values(1)] #2
+corr_unstacked = corr_unstacked[corr_unstacked.index.get_level_values(0) < corr_unstacked.index.get_level_values(1)] #3
+
+print()
+print(corr_unstacked)
