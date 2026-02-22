@@ -13,8 +13,15 @@ The goal of this project is to evaluate whether temporary divergences between ne
 
 ## How to run
 ### 1. Clone the repository
-### 2. Create ".env" file with Alpaca API keys
+git clone https://github.com/hausmannmike/my-turbo-bot.git
+cd my-turbo-bot
+### 2. Install dependencies
+pip install alpaca-py pandas numpy python-dotenv
+### 3. Configure API keys
+Create a ".env" file:
+
 ALPACA_ENDPOINT_URL = "endpoint_url_here"
 ALPACA_API_KEY = "your_key_here"
 ALPACA_SECRET_KEY = "your_secret_here"
-### 3. Run the project
+### 4. Run 
+python main.py
