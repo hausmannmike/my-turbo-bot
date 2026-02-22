@@ -3,7 +3,7 @@ A simple statistical arbitrage ptototype designed to test mean-reversion in nega
 
 
 ## Objective
-The goal of this project is to evaluate whether temporary divergences between negatively correlated stocks can be exlploited using a simple rule-based maerket-netural strategy.
+The goal of this project is to evaluate whether temporary divergences between negatively correlated stocks can be exploited using a simple rule-based market-netural strategy.
 
 ## Strategy Overview
 
@@ -12,5 +12,9 @@ The goal of this project is to evaluate whether temporary divergences between ne
 ## Architecture
 
 ## How to run
-1. Create ".env" file with Alpaca API keys.
-2. ...
+### 1. Clone the repository
+### 2. Create ".env" file with Alpaca API keys
+ALPACA_ENDPOINT_URL = "endpoint_url_here"
+ALPACA_API_KEY = "your_key_here"
+ALPACA_SECRET_KEY = "your_secret_here"
+### 3. Run the project
