@@ -34,3 +34,9 @@ corr_unstacked = corr_unstacked[corr_unstacked.index.get_level_values(0) < corr_
 
 print()
 print(corr_unstacked)
+
+most_negative_pair = corr_unstacked.idxmin()
+most_negative_value = corr_unstacked.min()
+
+print("Most negative pair:", most_negative_pair)
+print("Correlation:", most_negative_value)
