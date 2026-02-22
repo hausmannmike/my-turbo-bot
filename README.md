@@ -1,9 +1,12 @@
 # Turbocharger Pairs Strategy
-A simple statistical arbitrage prototype designed to test mean-reversion in negatively correlated equity pairs. 
+A research prototype evaluating a rule-based market-neutral strategy
+applied to negatively correlated equity pairs.
 
 
 ## Objective
-The goal of this project is to evaluate whether temporary divergences between negatively correlated stocks can be exploited using a simple rule-based market-neutral strategy.
+The objective of this project is to test whether temporary divergences 
+between negatively correlated equities can be systematically exploited 
+using a simple, rule-based, dollar-neutral trading framework.
 
 ## Strategy Overview
 
