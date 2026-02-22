@@ -14,6 +14,7 @@ The goal of this project is to evaluate whether temporary divergences between ne
 ## How to run
 ### 1. Clone the repository
 git clone https://github.com/hausmannmike/my-turbo-bot.git
+
 cd my-turbo-bot
 ### 2. Install dependencies
 pip install alpaca-py pandas numpy python-dotenv
