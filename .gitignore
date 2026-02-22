@@ -1,0 +1,3 @@
+# .env contains the API- and secret keys.
+# to make sure that we do not uplaod them on git we add it that file to .gitignore
+.env
